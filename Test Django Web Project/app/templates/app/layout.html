@@ -172,9 +172,20 @@
     </div>
 
     <footer class="footer">
-
-        {% block footer %}{% endblock %}
-        <p>COPYRIGHT &copy; IFB398 Team 8</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="footer-copyright">COPYRIGHT &copy; 2017. IFB398 Team 8.</p>
+            <ul class="list-inline footer-links">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Cookie policy</a></li>
+            </ul>
+          </div>
+        </div>
+        {% block footer %}
+        
+        {% endblock %}
+        {#<p>COPYRIGHT &copy; 2017. IFB398 Team 8.</p>#}
 
     </footer>
 
