@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>1WS | Dashboard</title>
+  
+  {% block title %} 
+  <title>1WS | Dashboard</title> 
+  {% endblock %}
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i,900,900i">
   <link rel="stylesheet" href="https://basecoat.cdn.dimensiondata.com/1.7.0/css/dd.basecoat.min.css">
   <!-- link rel="stylesheet" href="css/app.min.css" --> <!-- your own stylesheet here -->
@@ -43,7 +47,9 @@
 	  <div class="content scrollbars scrollbars-light">
 	    <nav>
 	      <ul class="nav">
-		    <li><a class="active" href='#'>Home</a></li>
+		    <li><a class="active" href='/index'>Home</a></li>
+            <li><a class="active" href='/about'>About</a></li>
+            <li><a class="active" href='/contact'>Contact</a></li>
 		    <li><a class="next collapsed" href="#" data-toggle="collapse">Collapsable List #1</a>
 		      <ul class="collapse">
 			    <li><a href="#">Link 1</a></li>
@@ -113,6 +119,7 @@
               </ul>
             </li>
             <!-- Plain text link -->
+              
             <li class="hidden-mobile hidden-md hidden-lg hidden-xxl">
               <a href="#">Link</a>
             </li>
@@ -128,7 +135,7 @@
               <ul class="dropdown-menu">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#"><i aria-hidden="true" class="fa fa-laptop">Login</i></a></li>
+                <li><a href="/logintest"><i aria-hidden="true" class="fa fa-laptop"> Login</i></a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">End Session</a></li>
               </ul>
@@ -198,7 +205,9 @@
         </a>
         <nav class="drilldown">
           <ul class="nav">
-            <li role="presentation"><a href="">Home</a></li>
+            <li role="presentation"><a href="/index">Home</a></li>
+            <li role="presentation"><a href="/about">About</a></li>
+            <li role="presentation"><a href="/contact">Contact</a></li>
             <li role="presentation"><a href="#">SwipeList #1</a>
               <ul class="nav">
                 <li role="presentation"><a href="#">Link 1</a></li>
@@ -253,7 +262,7 @@
                     <li role="presentation"><a href="#">Link 2-4</a></li>
                   </ul>
                 </li>
-                <li role="presentation"><a href="components.imagery.html">Link 3</a>
+                <li role="presentation"><a href="#">Link 3</a>
                   <ul class="nav">
                     <li role="presentation"><a href="#">Link 3</a></li>
                     <li role="presentation"><a href="#">Link 3</a></li>
