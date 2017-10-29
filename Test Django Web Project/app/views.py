@@ -27,7 +27,7 @@ def contact(request):
         'app/contact.html',
         {
             'title':'Contact',
-            'message':'Your contact page.',
+            'message':'Reach us at any of these Monday to Friday',
             'year':datetime.now().year,
         }
     )
