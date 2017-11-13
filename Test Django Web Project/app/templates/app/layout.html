@@ -50,22 +50,22 @@
 		    <li><a class="active" href='/index'>Home</a></li>
             <li><a class="active" href='/about'>About</a></li>
             <li><a class="active" href='/contact'>Contact</a></li>
-		    <li><a class="next collapsed" href="#" data-toggle="collapse">Collapsable List #1</a>
+		    <li><a class="next collapsed" href="#" data-toggle="collapse">Printing Data</a>
 		      <ul class="collapse">
-			    <li><a href="#">Link 1</a></li>
+			    <li><a href="/index">Link 1</a></li>
 			    <li><a href="#">Link 2</a></li>
 			    <li><a href="#">Link 3</a></li>
 		      </ul>
 		    </li>
-		    <li><a class="next collapsed" href="#" data-toggle="collapse">Collapsable List #2</a>
+		    <li><a class="next collapsed" href="#" data-toggle="collapse">Room Booking Data</a>
 		      <ul class="collapse">
-			    <li><a href="#">Link 1</a></li>
+			    <li><a href="/index">Link 1</a></li>
 			    <li><a href="#">Link 2</a></li>
 		      </ul>
 		    </li>
-		    <li><a class="next collapsed" href="#" data-toggle="collapse">Collapsable List #3</a>
+		    <li><a class="next collapsed" href="#" data-toggle="collapse">Personal Data</a>
 		      <ul class="collapse">
-			    <li><a href="#">Link 1</a></li>
+			    <li><a href="/index">Link 1</a></li>
 			    <li><a href="#">Link 2</a></li>
 			    <li><a href="#">Link 3</a></li>
                 <li><a href="#">Link 4</a></li>
@@ -80,6 +80,7 @@
 		    <li><a class="next collapsed" href="#" data-toggle="collapse">Help &amp; Support</a>
 		      <ul class="collapse">
 			    <li><a href="#">Community</a></li>
+                <li><a href="#">Administrator</a></li>
 		      </ul>
 		    </li>
 	      </ul>
@@ -105,7 +106,7 @@
                   <img src="https://basecoat.cdn.dimensiondata.com/1.7.0/img/logo.svg" alt="Dimension Data Logo" class="hidden-mobile"/>
                   <img src="https://basecoat.cdn.dimensiondata.com/1.7.0/img/icon.svg" alt="Dimension Data Icon" class="hidden-desktop"/>
                 </a>
-                <div class="logo-title"><span>1WS<br>Web Portal</span></div>
+                {#<div class="logo-title"><span>1WS<br>Web Portal</span></div>#}
               </div>
             </li>
             <!-- Dropdown menu -->
@@ -135,9 +136,8 @@
               <ul class="dropdown-menu">
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="/logintest"><i aria-hidden="true" class="fa fa-laptop"> Login</i></a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">End Session</a></li>
+                <li><a href="/">End Session / Logout</a></li>
               </ul>
             </li>
             <!-- Icon button -->
@@ -153,9 +153,7 @@
               <button class="navbar-btn btn"><i aria-hidden="true" class="fa fa-exclamation-triangle"></i></button>
             </li>
             <!-- Icon-text button -->
-            <li>
-              <button class="navbar-btn btn"><i aria-hidden="true" class="fa fa-cogs"></i><span class="navbar-btn-label hidden-xs">Settings</span></button>
-            </li>
+
             <!-- Mobile menu button -->
             <li class="mobile-menu-toggle hidden-desktop" data-toggle="mobile-menu">
               <button class="navbar-btn btn"><i aria-hidden="true" class="fa fa-bars"></i></button>
@@ -164,7 +162,9 @@
             <li class="divided hidden-mobile">
               <div class="horizontal-logo">
                 <!-- img should be wider than it is high (approx 4:1), with a transparent background and 24px (at least) in height -->
-                <img src="https://basecoat.cdn.dimensiondata.com/1.7.0/img/client-logo.png" alt="Client Logo" />
+                {#<img src="https://basecoat.cdn.dimensiondata.com/1.7.0/img/client-logo.png" alt="Client Logo" />#}
+                {#<img src="https://www.qld.gov.au/Content/assets/qg-logo.png" width="200" height="48" alt="Queensland Government">#}
+                <img src="https://static.qgov.net.au/assets/v2/images/skin/qg-coa.svg" width="287" height="50" alt="Queensland Government home">
               </div>
             </li>
           </ul>

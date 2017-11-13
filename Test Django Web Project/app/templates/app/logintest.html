@@ -24,10 +24,10 @@
       <header class="header">
         <div class="horizontal-logo horizontal-logo-solid">
           <a href="#" title="Dimension Data" class="logo-image">
-            <img src="https://basecoat.dimensiondata.com/img/logo-white.svg" alt="Dimension Data Logo">
+            {#<img src="https://basecoat.dimensiondata.com/img/logo-white.svg" alt="Dimension Data Logo">#}
           </a>
-          <div class="logo-title three-lines">
-            <span>1WS Web Portal</span>
+          <div class="logo-title">
+            <span>1WS <br>Web Portal</span>
           </div>
         </div>
       </header>
@@ -96,7 +96,7 @@
                       <form data-validation-example>
                         <div class="row">
                           <div class="col-xs-12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui tempora odit aut voluptas quis magni eius.</p>
+                            <p>Please enter your business email so our administrators can get in contact with you to reset your password.</p>
                             <div class="form-group has-icon">
                               <label class="control-label" for="loginUsername">Username or Email</label>
                               <input type="text" placeholder="Enter your username or email address" class="form-control" id="loginUsername" required>
@@ -121,7 +121,8 @@
  
 {% endblock %}
 
-{% block footer %}
+
+{#{% block footer %}
       <footer class="footer">
         <div class="row">
           <div class="col-xs-12">
@@ -135,7 +136,8 @@
         </div>
       </footer>
      </div>
-{% endblock %}
+{% endblock %}#}
+
 
 {% block scripts %}
 
